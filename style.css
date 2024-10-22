@@ -72,7 +72,7 @@ img.logo {
     height: 40px;
 }
 h2 {
-    padding: 20px;
+    padding-bottom: 20px;
 }
 p {
     padding-bottom: 30px;
@@ -88,6 +88,27 @@ div.mainvisual img {
 }
 section.magazines p {
     margin-bottom: 10px;
+}
+section.magazines div.img_text_group {
+    position: relative;
+}
+section.magazines img {
+    /* position: relative; */
+}
+section.magazines div.text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    color: var(--secondary-font-color);
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 15px 0;
+    width: 290px;
+}
+section.magazines div.text p {
+    padding: unset;
+    margin: unset;
 }
 
 @media (min-width: 896px) {
