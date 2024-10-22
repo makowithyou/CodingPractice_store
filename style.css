@@ -16,10 +16,12 @@ body {
 }
 img {
     display: block;
+    width: 100%;
 }
 h1, h2, h3, h4, p, ul {
     margin: unset;
     padding: unset;
+    text-align: center;
 }
 h2 {
     font-family: Arial;
@@ -58,12 +60,35 @@ a {
 div.container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 5% 0;
+    padding: 0 5%;
 }
 
 /* 狭い画面向けの既定の CSS レイアウト値 */
-
-
+section {
+    margin: 80px 0;
+}
+img.logo {
+    width: 120px;
+    height: 40px;
+}
+h2 {
+    padding: 20px;
+}
+p {
+    padding-bottom: 30px;
+}
+header {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+}
+div.mainvisual img {
+    height: 100vh;
+    object-fit: cover;
+}
+section.magazines p {
+    margin-bottom: 10px;
+}
 
 @media (min-width: 896px) {
   /* 広い画面向けの CSS */
