@@ -140,7 +140,8 @@ section.fashion .container {
 section.catalog_antique {
     background-color: var(--primary-bg-color);
     margin-top: 50px;
-    margin-bottom: 30px;
+    margin-bottom: unset;
+    padding: 30px 0;
 }
 section.catalog_antique h2 {
     padding-bottom: 40px;
