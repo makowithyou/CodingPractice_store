@@ -155,6 +155,9 @@ section.catalog_antique div.text {
 section.catalog_antique div.text p {
     text-align: start;
 }
+section.catalog_antique div.text p:last-of-type {
+    padding: unset;
+}
 section.catalog_antique div.antique div.text p:last-of-type {
     padding-bottom: 60px;
 }
