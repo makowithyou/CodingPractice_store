@@ -9,6 +9,7 @@
 }
 * {
     box-sizing: border-box;
+    color: var(--primary-font-color);
 }
 body {
     font-family: Arial、Hiragino Sans、Hiragino Kaku Gothic ProN、Meiryo、sans-serif;
@@ -29,41 +30,43 @@ li {
 }
 h2 {
     font-family: Arial;
-    font-size: 24px;
     font-weight: bold;
+    font-size: 24px;
+    line-height: 1.2;
 }
 h3 {
     font-family: Arial;
-    font-size: 20px;
     font-weight: bold;
+    font-size: 20px;
+    color: var(--secondary-font-color);
+    line-height: 1.2;
 }
 h4 {
     font-family: Arial;
-    font-size: 16px;
     font-weight: bold;
+    font-size: 16px;
     color: var(--secondary-font-color);
+    line-height: 1;
 }
 p {
+    font-family: Meiryo;
     font-size: 14px;
+    line-height: 1.2;
+
 }
 footer p, li {
-    font-family: Arial;
+    font-family: Meiryo;
     font-size: 12px;
     color: var(--secondary-font-color);
     line-height: 2;
     text-align: start;
 }
-p.copy {
-    font-size: 12px;
-    color: var(--primary-font-color);
-    text-align: center;
-    padding: 30px;
-}
+p.copy,
 a, a:visited {
+    font-family: Meiryo;
     font-size: 12px;
+    line-height: 1.2;
     color: var(--primary-font-color);
-}
-a {
     text-decoration: none;
 }
 div.container {
@@ -122,6 +125,7 @@ section.magazines div.text {
     width: 290px;
 }
 section.magazines div.text p {
+    color: var(--secondary-font-color);
     padding: unset;
     margin: unset;
 }
@@ -129,14 +133,13 @@ section.fashion {
     padding-top: 35px;
     margin-bottom: 50px;
     background-image: url("https://lh3.googleusercontent.com/d/1vb4ihmvLQO-l7ZLEboMNkHLnBbgs7V05");
+    background-position: bottom;
+    background-repeat: no-repeat;
 }
 section.fashion .container {
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-section.fashion h2 {
-    padding-top: 35px;
 }
 section.catalog_antique {
     background-color: var(--primary-bg-color);
@@ -170,7 +173,20 @@ footer div {
 footer div:first-of-type {
     align-self: center;
 }
+footer p.copy {
+    text-align: center;
+    padding: 30px 0;
+}
 
 @media (min-width: 896px) {
   /* 広い画面向けの CSS */
+}
+
+/* 後で消す */
+/* 後で消す */
+/* 後で消す */
+@media (max-width: 375px) {
+    main {
+        background-color: red;
+    }
 }
