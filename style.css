@@ -130,6 +130,7 @@ section.magazines div.text p {
     margin: unset;
 }
 section.fashion {
+    height: 520px;
     padding-top: 35px;
     margin-bottom: 50px;
     background-image: url("https://lh3.googleusercontent.com/d/1vb4ihmvLQO-l7ZLEboMNkHLnBbgs7V05");
@@ -185,10 +186,8 @@ footer p.copy {
 /* 後で消す */
 /* 後で消す */
 /* 後で消す */
-/*
-@media (max-width: 375px) {
+/* @media (max-width: 375px) {
     main {
         background-color: red;
     }
-}
-*/
+} */
