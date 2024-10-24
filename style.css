@@ -130,12 +130,13 @@ section.magazines div.text p {
     margin: unset;
 }
 section.fashion {
+    box-sizing: content-box;
     height: 520px;
     padding-top: 35px;
     margin-bottom: 50px;
     background-image: url("https://lh3.googleusercontent.com/d/1vb4ihmvLQO-l7ZLEboMNkHLnBbgs7V05");
-    background-position: bottom;
-    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 section.fashion .container {
     display: flex;
