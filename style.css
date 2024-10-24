@@ -23,6 +23,10 @@ h1, h2, h3, h4, p, ul {
     padding: unset;
     text-align: center;
 }
+li {
+    list-style: inside;
+    list-style-type: "- ";
+}
 h2 {
     font-family: Arial;
     font-size: 24px;
@@ -37,18 +41,23 @@ h4 {
     font-family: Arial;
     font-size: 16px;
     font-weight: bold;
+    color: var(--secondary-font-color);
 }
 p {
     font-size: 14px;
 }
-footer p {
+footer p, li {
     font-family: Arial;
     font-size: 12px;
     color: var(--secondary-font-color);
+    line-height: 2;
+    text-align: start;
 }
 p.copy {
     font-size: 12px;
     color: var(--primary-font-color);
+    text-align: center;
+    padding: 30px;
 }
 a, a:visited {
     font-size: 12px;
@@ -74,8 +83,16 @@ img.logo {
 h2 {
     padding-bottom: 20px;
 }
+h4 {
+    padding-top: 30px;
+    padding-bottom: 10px;
+}
 p {
     padding-bottom: 30px;
+}
+a.button {
+    padding: 14px 36px;
+    border: 1px solid var(--border-color);
 }
 header {
     position: absolute;
@@ -91,9 +108,7 @@ section.magazines p {
 }
 section.magazines div.img_text_group {
     position: relative;
-}
-section.magazines img {
-    /* position: relative; */
+    margin-bottom: 30px;
 }
 section.magazines div.text {
     position: absolute;
@@ -109,6 +124,51 @@ section.magazines div.text {
 section.magazines div.text p {
     padding: unset;
     margin: unset;
+}
+section.fashion {
+    padding-top: 35px;
+    margin-bottom: 50px;
+    background-image: url("https://lh3.googleusercontent.com/d/1vb4ihmvLQO-l7ZLEboMNkHLnBbgs7V05");
+}
+section.fashion .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+section.fashion h2 {
+    padding-top: 35px;
+}
+section.catalog_antique {
+    background-color: var(--primary-bg-color);
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+section.catalog_antique h2 {
+    padding-bottom: 40px;
+}
+section.catalog_antique div.text {
+    display: flex;
+    margin: 60px 0;
+    flex-direction: column;
+    align-items: center;
+}
+section.catalog_antique div.text p {
+    text-align: start;
+}
+section.catalog_antique div.antique div.text p:last-of-type {
+    padding-bottom: 60px;
+}
+footer > div {
+    background-color: var(--secondary-bg-color);
+    padding: 30px 0;
+}
+footer div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+footer div:first-of-type {
+    align-self: center;
 }
 
 @media (min-width: 896px) {
